@@ -13,6 +13,8 @@ namespace TesteLucas.Models
         public DbSet<Produto> Produtos { get; set; }
 
         public DbSet<Cliente> Clientes { get; set; }
+
+        public DbSet<Cartao> Cartaos { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;Database=Testelucas;Integrated Security= True");

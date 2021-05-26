@@ -1,0 +1,63 @@
+﻿@model TesteLucas.Models.Cartao
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Cartao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.N_Cartao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.N_Cartao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome_Titular)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome_Titular)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cpf_Titular)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cpf_Titular)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cod_seguranca)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cod_seguranca)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Validade_Cartao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Validade_Cartao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.N_parcelas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.N_parcelas)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Nome)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
