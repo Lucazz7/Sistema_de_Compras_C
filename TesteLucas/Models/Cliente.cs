@@ -15,5 +15,6 @@ namespace TesteLucas.Models
 
         public String Telefone { get; set; }
 
+        public List<Cartao> Cartaos { get; set; }
     }
 }
